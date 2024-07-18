@@ -1,0 +1,4 @@
+#Redirect 302 /admin/docs/upload http://sgpk.rkomi.ru/admin/errors/accessdeny.php
+
+#Запрещено любое обращение к файлам. Доступ возможен только через getfile.php
+dany from all
