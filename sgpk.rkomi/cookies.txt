@@ -1,0 +1,12 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+sgpk.rkomi.ru	TRUE	/portal/	FALSE	1999999999	wordpress_test_cookie	WP+Cookie+check
+sgpk.rkomi.ru	TRUE	/	FALSE	1999999999	PHPSESSID	ihd4ahiq7phfu2q8t3v7chc8m2
+.yandex.ru	TRUE	/	FALSE	1999999999	_yasc	zhJ7lw2mWuD+y+cqeY0CFsuhuJNVvhfFUMvzzilUOKVctAfAUn5EiBQ50Xe+VZSJ
+.yandex.ru	TRUE	/	FALSE	1999999999	i	r3Tuj5QlMui2jjK4ao8/mdywnOtwuwDvJSEOgQ4yy7JCW3z1maunhdn9u09I192j9Xq33ukj00m61cPKb3VN6CdOsmo=
+.yandex.ru	TRUE	/	FALSE	1999999999	yandexuid	4610737621721279833
+.yandex.ru	TRUE	/	FALSE	1999999999	yashr	5938261631721279833
+.vk.com	TRUE	/	FALSE	1999999999	remixir	DELETED
+.vk.com	TRUE	/	FALSE	1999999999	remixlang	3
+.vk.com	TRUE	/	FALSE	1999999999	remixstlid	9086472289594149417_MflG27j5ez6vJd9a9jkSPOyWSm62PLZCSX1Ifmj49uD
+

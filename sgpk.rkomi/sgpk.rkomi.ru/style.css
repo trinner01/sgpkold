@@ -1,0 +1,970 @@
+/* CSS Document */
+
+@font-face {
+    font-family: PTastraSerif; /* Гарнитура шрифта */
+    src: url(fonts/PTAstraSerif-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: PTastraSans; /* Гарнитура шрифта */
+    src: url(fonts/PTAstraSans-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+
+
+
+
+.starii{
+	font-size: 50px;
+	text-align: center;
+	color: white;
+
+}
+
+
+
+.main_border{
+                background-color:#FFFFFF;
+                padding-left:0px;
+                padding-right:0px;
+                padding-top:0px;
+                padding-bottom:0px;
+                border-radius: 5px;
+			 }
+
+
+
+.maintd{
+        border:0px;
+	    margin-left:0px;
+	    margin-right:0px;
+	    margin-top:0px;
+	    margin-bottom:0px;
+
+	    padding-left:0px;
+	    padding-right:0px;
+	    padding-top:0px;
+	    padding-bottom:0px;
+        /*border-radius: 5px; */
+		}
+
+
+
+/* Настройки картинки в баннере сайта*/
+.headerimg{
+
+        border:0px;
+
+	    margin-left:0px;
+	    margin-right:0px;
+	    margin-top:0px;
+	    margin-bottom:0px;
+
+	    padding-left:0px;
+	    padding-right:0px;
+	    padding-top:0px;
+	    padding-bottom:0px;
+        border-radius: 4px;
+
+           }
+
+html, body {height:100%; margin:0px; margin-top:2px; margin-bottom:2px;}
+body{font-family:PTAstraSerif; font-size:16px; color:#3E3E3E;} /*#4E4E4E*/
+.mainfont{font-family:PTAstraSerif; font-size:14px; color: #3E3E3E; margin:15px; text-align:justify}
+h1{font-family: PTAstraSerif, Franklin Gothic; font-size: 28px;  font-weight: normal; text-indent: 0px; color: #FFFFFF; margin:0px; background-color: #77B3D4; padding: 14px; border-radius: 24px;}  /*Helvetica Franklin Gothic #0099FF #339933*/
+
+/*h2{font-family: Cambria; font-size: 26px;  text-indent: 0px; color: #3366CC; border-left: 7px solid #339933; border-bottom: 2px solid #339933; border-bottom-left-radius: 16px; border-top-left-radius: 16px; padding-bottom: 4px; padding-top: 0px; padding-left:14px; padding-right:3px; margin:7px; margin-top:30px; margin-bottom:30px; vertical-align:middle;}*/
+
+h2{font-family: PTAstraSerif, Cambria; font-size:26px; text-indent: 0px; color:#3366CC; padding-bottom: 4px; padding-top: 0px; padding-left:0px; padding-right:3px; margin:7px; margin-top:30px; margin-bottom:30px; vertical-align:middle;} /*#3366CC*/
+
+h3{font-family: PTAstraSerif, Cambria; font-size: 20px; font-weight: bold; text-indent: 0px; color: #505050; margin:7px; margin-top:20px; margin-bottom:20px; padding-bottom: 4px; padding-top: 0px;}     /*#404040*/
+.divh2 {border-left: 7px solid #339933; border-bottom: 2px solid #339933; border-bottom-left-radius: 8px; border-top-left-radius: 2px; padding-left:7px; padding-right:3px; margin-top:30px; margin-bottom:30px;  vertical-align:middle;} /*#A6D8CB*/
+
+
+
+p{font-family:PTAstraSerif; font-size:16px; color: #3E3E3E; margin:7px; text-indent: 20px; text-align:justify;} /**/
+ul li {font-family:PTAstraSerif; font-size:16px;}
+ol li {font-family:PTAstraSerif; font-size:16px;}
+
+#ptitle{font-family:PTastraSerif; font-size:26px; text-indent: 20px; color: #3E3E3E; margin:7px;}
+#arttitle{}
+
+#p1{font-family:PTastraSerif; font-size:18px; text-indent: 20px; color: #4E4E4E; margin:7px; text-align:left; margin-top:15px; font-weight:bold;}
+#p2{font-family:PTastraSerif; font-size:16px; text-indent: 20px; color: #4E4E4E; margin:7px; text-align:left; margin-top:15px; font-weight:bold;}
+#p3{font-family:PTastraSerif; font-size:14px; text-indent: 20px; color: #4E4E4E; margin:7px; text-align:left; margin-top:15px; font-weight:bold;}
+#p4{font-family:PTastraSerif; font-size:12px; text-indent: 20px; color: #4E4E4E; margin:7px; text-align:left; margin-top:15px; font-weight:bold;}
+#p5{font-family:PTastraSerif; font-size:17px; text-indent: 0px; color: #3366CC; margin:7px; text-align:left; margin-top:30px; margin-bottom:20px; /*text-shadow: 0px 0px 1px #999999;*/}
+#p5c{font-family:PTastraSerif; font-size:17px; text-indent:  0px; color: #3366CC; margin:7px; text-align:center; margin-top:30px; text-shadow: 0px 0px 1px #999999;}
+#pagepath{font-family:PTastraSerif; font-size:12px; text-indent: 20px; color: #009900; margin:7px; text-align:left; margin-top:15px; font-weight:normal;}
+.pagepath{font-family: PTastraSerif; font-size: 13px; color: #006600;/*#336633*/}
+#sectiontitle { float:right; font-family:PTastraSerif; font-size:14px; text-indent: 0px; color: #009900; margin:10px; margin-top:0px; text-align:justify; font-weight:normal;}
+
+/*#p5{font-family:verdana; font-size:16px; text-indent: 20px; color: #0099FF; margin:7px; text-align:left; margin-top:15px; text-shadow: 0px 0px 1px #999999;}*/
+
+.content_wrapper
+{
+width: 98%;
+margin: auto;
+}
+
+.blocktitle{
+/*font-family: verdana;
+/*font-size:13px;
+/*font-weight: bold;
+/*text-indent: 20px;
+/*color:red; /*#0066FF*/
+/*margin:7px;
+/*text-align:justify;
+/*text-shadow: 1px 1px 4px #8B8B8B; */
+
+text-align:center;
+font-family: Arial, Helvetica, sans-serif;
+font-size:14px;
+/*font-weight: bold;*/
+text-indent: 20px;
+color:#FF3333;       /*#0099FF*/
+text-shadow: 1px 1px 2px #A7A7A7;
+
+}
+
+.block{
+        border:1px solid #E0E0E0;
+        background-color: #FFFFFF;
+        margin-left:1px;
+        margin-right:1px;
+        margin-top:1px;
+        margin-bottom:1px;
+        /*border-radius: 4px; */
+	   }
+
+
+
+.left{
+        background-color:#F6F6F6;
+        padding-top:0px;
+	  }
+
+
+
+.content{
+          border-top:1px solid #E0E0E0;
+          border-bottom:1px solid #E0E0E0;
+          background-color: #FFFFFF;
+        }
+
+.right{background-color:#F6F6F6;}
+.newstd{border-right:1px solid #E0E0E0; background-color:#FFFFFF;}
+.pnewsdemo{font-family:verdana; font-size:10px; text-indent: 20px; color: #4E4E4E;  text-align:justify}
+
+
+
+/*Заголовки блоков слева и справа на главной странице*/
+.main_page_LR_block
+{
+  background-color: #77B3D4;    /* #77B3D4; #33CC66; #66CC66;*/
+  border-radius: 3px;
+  padding: 6px;
+  margin: 1px;
+  color: #FFFFFF;
+  font-family: PTastraSans;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+
+
+/* Гиперссылки сайта*/
+a {
+font-family: PTastraSerif;
+text-decoration: none;
+color: #3366CC;    /*#3366CC  #2A588E*/
+}
+
+a:hover {
+font-family: PTastraSerif;
+text-decoration: underline dotted;
+color: #CC0000;
+}
+
+
+a:visited {
+     text-decoration: none;
+     color: #3366CC; /*#707070*/
+     }
+
+
+/* Гиперссылки демоновостей*/
+.anewsdemo {
+font-family: PTastraSerif;
+text-decoration:none;
+color:#009900;
+}
+.anewsdemo:hover {
+font-family: PTastraSerif;
+text-decoration: underline;
+color: #FF0000;
+}
+
+/* Гиперссылки главного меню*/
+#mainmenu {
+font-family: Arial;
+text-decoration: none;
+color: #0066CC;
+font-size:12px;
+}
+
+#mainmenu:hover {
+font-family: Arial;
+text-decoration: none;
+color: #FF0000;
+font-size:12px;
+text-decoration:underline;
+}
+
+
+
+
+
+#mya {
+font-family: Verdana;
+text-decoration: none;
+color: #4E4E5E;
+}
+
+
+
+#mya:hover {
+font-family: Verdana;
+color: #00CC33;
+}
+
+
+
+
+
+/* Белая ссылка */
+#awhite {
+font-family: Verdana;
+text-decoration: none;
+color: #FFFFFF;
+font-size:11px;
+}
+
+#awhite:hover {
+font-family: Verdana;
+text-decoration: underline;
+color: #FFFFFF;
+font-size:11px;
+}
+/* Белая ссылка (конец блока)*/
+
+
+
+/* ====== Идентификатор таблиц сайта =======*/
+
+#mytable {
+          border-bottom:1px solid #D6D6D6;
+	      border-left:1px solid #D6D6D6;
+		  background-color: #FFFFFF;
+		  padding:0px;
+            font-family: PTastraSerif;
+            font-size: 14px;
+            font-weight: normal;
+		 }
+
+/* ячейки привязаны к mytable */
+#mytable td{
+            border-top:1px solid #D6D6D6;
+            border-right:1px solid #D6D6D6;
+			margin-left:0px;
+			margin-right:0px;
+			margin-top:0px;
+			margin-bottom:0px;
+			padding:3px;
+            }
+
+#mytable tr{
+background-color:#FFFFFF;
+}
+
+#mytable tr:hover {
+/*background-color:#F6F6F6;*/
+background-color:#E8E8E8;
+}
+
+
+/* Шапка таблицы, ячейки привязаны к mytable */
+#mytable th{
+            border-top:1px solid #E0E0E0;
+            border-right:1px solid #E0E0E0;
+			background-color:#00CCFF;
+			margin-left:0px;
+			margin-right:0px;
+			margin-top:0px;
+			margin-bottom:0px;
+			padding:3px;
+            background:#E1F0FF;
+			}
+
+/*-------*/
+
+#mytable2 {
+          border-bottom:1px solid #D6D6D6;
+	      border-left:1px solid #D6D6D6;
+		  background-color: #FFFFFF;
+		  padding:0px;
+		  font-size:12px;
+		 }
+
+/* ячейки привязаны к mytable */
+#mytable2 td{
+            border-top:1px solid #D6D6D6;
+            border-right:1px solid #D6D6D6;
+			margin-left:0px;
+			margin-right:0px;
+			margin-top:0px;
+			margin-bottom:0px;
+			padding:7px;
+            }
+
+#mytable2 tr{
+background-color:#FFFFFF;
+}
+
+
+/* Шапка таблицы, ячейки привязаны к mytable */
+#mytable2 th{
+            border-top:1px solid #E0E0E0;
+            border-right:1px solid #E0E0E0;
+            background-color:#00CCFF;
+            margin-left:0px;
+            margin-right:0px;
+            margin-top:0px;
+            margin-bottom:0px;
+            padding:3px;
+            background:#E1F0FF;
+			}
+
+ /* ====== Идентификатор таблиц сайта (конец блока) =======*/
+
+
+
+
+
+
+
+
+
+/* [start] ====== Идентификатор таблиц с файлами =======*/
+
+#filestable {
+          border-bottom:1px solid #D6D6D6;
+	      border-left:1px solid #D6D6D6;
+		  background-color: #FFFFFF;
+		  padding:0px;
+		  font-size:12px;
+		 }
+
+/* ячейки привязаны к mytable */
+#filestable td{
+            border-top:1px solid #D6D6D6;
+            border-right:1px solid #D6D6D6;
+            margin-left:0px;
+            margin-right:0px;
+            margin-top:0px;
+            margin-bottom:0px;
+            padding:5px;
+            color: #707070;
+            font-family: PTastraSans;
+            font-size: 14px;
+            font-weight: normal;
+            vertical-align: middle;
+            }
+
+#filestable td a{
+            color: #303030;
+            }
+
+
+
+#filestable tr{
+background-color:#FFFFFF;
+}
+
+#filestable tr:hover {
+/*background-color:#F6F6F6;*/
+background-color:#E8E8E8;
+}
+
+
+/* Шапка таблицы, ячейки привязаны к mytable */
+#filestable th{
+            border-top:1px solid #E0E0E0;
+            border-right:1px solid #E0E0E0;
+            background-color:#00CCFF;
+            margin-left:0px;
+            margin-right:0px;
+            margin-top:0px;
+            margin-bottom:0px;
+            padding:4px;
+            background:#E1F0FF;
+            font-family: PTastraSans;
+            font-size: 16px;
+            font-weight: normal;
+            vertical-align: middle;
+            }
+
+/* [end] ====== Идентификатор таблиц с файлами =======*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* [begin] ====== Идентификатор таблиц =======*/
+table.table_universal
+{
+ border-collapse: collapse;
+ font-family: PTastraserif;
+ font-size: 14px;
+ /*border: 2px solid #00cc33;*/
+}
+
+table.table_universal tr
+{
+background-color:#FFFFFF;
+}
+
+table.table_universal tr:hover 
+{
+    background-color: #E8E8E8; /*#E8E8E8;*/
+}
+
+table.table_universal td
+{
+border:1px solid #D6D6D6;
+padding: 4px;
+vertical-align: middle;
+}
+
+table.table_universal th
+{
+border: 1px solid #D6D6D6;
+padding: 2px;
+vertical-align: middle;
+background-color: #339933;
+color: #ffffff;
+font-weight: normal;
+font-size: 15px;
+background: linear-gradient(0deg, #339933, #00cc33);
+height: 48px;
+}
+
+table.table_universal th p
+{
+
+color: #ffffff;
+font-weight: normal;
+font-size: 15px;
+}
+
+
+/* [end] ====== Идентификатор таблиц =======*/
+
+
+
+
+
+/* Все Картинки без рамок */
+img{border:0px;}
+
+
+/* Моя рамка для картинки */
+.mypic
+{
+padding: 4px;
+margin-top: 0px; margin-bottom: 0px;
+margin-left: 7px; margin-right: 7px;
+border:1px solid #E0E0E0;
+border-radius: 4px;
+background-color:#FFFFFF;
+}
+
+
+/*Зум для изображений*/
+
+.imagezoom {
+ overflow:hidden;
+ /*width: 380px;*/
+ /*height:200px;*/
+padding: 4px;
+margin-top: 0px; margin-bottom: 0px;
+margin-left: 7px; margin-right: 7px;
+border:1px solid #E0E0E0;
+border-radius: 4px;
+background-color:#FFFFFF;
+ }
+
+.imagezoom img {
+ -moz-transition: all 0.2s ease-out;
+ -o-transition: all 0.2s ease-out;
+ -webkit-transition: all 0.2s ease-out;
+ }
+
+.imagezoom img:hover{
+ -webkit-transform: scale(2.0);
+ -moz-transform: scale(2.0);
+ -o-transform: scale(2.0);
+ }
+
+
+
+
+
+/*Зум для изображений*/
+
+.imagezoom-borderless {
+ overflow:hidden;
+ /*width: 380px;*/
+ /*height:200px;*/
+padding: 4px;
+margin-top: 0px; margin-bottom: 0px;
+margin-left: 7px; margin-right: 7px;
+border:0px solid #E0E0E0;
+border-radius: 4px;
+background-color:#FFFFFF;
+ }
+
+.imagezoom-borderless img {
+ -moz-transition: all 0.2s ease-out;
+ -o-transition: all 0.2s ease-out;
+ -webkit-transition: all 0.2s ease-out;
+ }
+
+.imagezoom-borderless img:hover{
+ -webkit-transform: scale(2.0);
+ -moz-transform: scale(2.0);
+ -o-transform: scale(2.0);
+ }
+
+
+
+/* Рамка-таблица для картинки. НЕ ИСПОЛЬЗОВАТЬ! ВЫЧИСТИТЬ КОД И УДАЛИТЬ ЭТОТ СТИЛЬ */
+#picture{
+        border:1px solid #E0E0E0;
+        background-color:#FFFFFF;
+        padding:2px;
+        margin:7px;
+        border-radius: 4px;
+        }
+
+
+/* Для списков (ul, ol) расположенных справа от картинки (Проблема наезда маркеров на картнику) */
+.mylist
+{
+overflow: hidden;
+}
+
+
+
+
+/*Горизонтальная линия */
+#hrnews{border:1px solid #E0E0E0;}
+
+.art_title    /*выпилить*/
+{
+font-family:verdana;
+font-size:20px;
+text-indent: 0px;
+color: #505050;
+text-align:left;
+margin-top: 25px;
+margin-bottom:20px;
+margin-left: 10px;
+margin-right: 5px;
+}
+
+.art_title h1
+{
+font-family:verdana;
+font-size:23px;
+text-indent: 0px;
+padding: 0px;
+margin: 0px;
+}
+
+.newsdemo_title
+{
+font-family: PTAstraSerif;
+font-size: 18px;
+text-indent: 0px;
+color: #505050;
+text-align: center;
+margin-top: 0px;
+margin-bottom:20px;
+margin-left: 5px;
+margin-right: 5px;
+padding: 7px;
+padding-left: 10px;
+padding-right: 10px;
+
+width: 524px;
+
+background-color: #EAEAEA;
+background: linear-gradient(to top, #EAEAEA, #EFEFEF);
+min-height: 30px;
+border-radius: 2px;
+
+text-transform: uppercase;
+
+}
+
+
+/* ТАБЛИЦА ГОРИЗОНТАЛЬНОГО МЕНЮ (Вкладки)*/
+
+/*Ячейка таблицы*/
+
+#td_item
+{
+font-family: verdana;
+font-size:11px;
+border-bottom: 1px solid #BFFFBF;
+background:#EAEAEA; /*#F6F6F6*/
+
+border-top-left-radius:8px;
+border-top-right-radius:8px;
+/*
+border-radius:7px 7px 0px 0px;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+*/
+}
+
+#td_item:hover
+{
+border-bottom: 1px solid #CCCCCC;
+background:#FFFFFF;
+}
+
+/*Ячейка выбранного пункта меню*/
+#td_selected
+{
+font-family: verdana;
+font-size:11px;
+border-left: 1px solid #CCCCCC;
+border-right: 1px solid #CCCCCC;
+border-top: 1px solid #CCCCCC;
+background:#FFFFFF;
+border-top-left-radius:8px;
+border-top-right-radius:8px;
+/*
+border-radius:7px 7px 0px 0px;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+*/
+}
+
+/*Ссылки меню*/
+#abutton {
+font-family: verdana;
+display:block;
+color:#333333 ; /*#333333*/
+margin:3px;
+padding:3px;
+/*font-weight:bold;*/
+}
+
+#abutton:hover {
+font-family: verdana;
+text-decoration:none;
+color:#00CC00; /* #333333*/
+/*font-weight:bold;*/
+}
+
+
+
+
+/*Прозрачные изображения <img class="transparent20" src="mypicture.jpg"> */
+ .transparent90 {
+    filter: alpha(Opacity=90); /* Полупрозрачность для IE */
+    opacity: 0.9; /* Полупрозрачность для других браузеров */
+   }
+ .transparent90:hover {filter: alpha(Opacity=100); opacity: 1.0;  border-radius: 4px;}
+ .transparent80 {filter: alpha(Opacity=80); opacity: 0.8; border-radius: 4px;}
+ .transparent80:hover {filter: alpha(Opacity=100); opacity: 1.0;  border-radius: 4px;}
+ .transparent70 {filter: alpha(Opacity=70); opacity: 0.7; border-radius: 4px;}
+ .transparent70:hover {filter: alpha(Opacity=100); opacity: 1.0;  border-radius: 4px;}
+ .transparent60 {filter: alpha(Opacity=60); opacity: 0.6; border-radius: 4px;}
+ .transparent60:hover {filter: alpha(Opacity=100); opacity: 1.0;  border-radius: 4px;}
+ .transparent50 {filter: alpha(Opacity=50); opacity: 0.5; border-radius: 4px;}
+ .transparent50:hover {filter: alpha(Opacity=100); opacity: 1.0;  border-radius: 4px;}
+ .transparent40 {filter: alpha(Opacity=40); opacity: 0.4; border-radius: 4px;}
+ .transparent40:hover {filter: alpha(Opacity=100); opacity: 1.0;  border-radius: 4px;}
+ .transparent30 {filter: alpha(Opacity=30); opacity: 0.3; border-radius: 4px;}
+ .transparent30:hover {filter: alpha(Opacity=100); opacity: 1.0;  border-radius: 4px;}
+ .transparent20 {filter: alpha(Opacity=20); opacity: 0.2; border-radius: 4px; }
+ .transparent20:hover {filter: alpha(Opacity=100); opacity: 1.0; border-radius: 4px;}
+ .transparent10 {filter: alpha(Opacity=10); opacity: 0.1; border-radius: 4px;}
+ .transparent10:hover {filter: alpha(Opacity=100); opacity: 1.0; border-radius: 4px;}
+ /*Прозрачные изображения (конец блока) */
+
+
+
+
+ /* Стили для моего аккордеона */
+.accordion_btn
+{    
+ width: 650px;
+ border: 1px solid #D6D6D6;
+ border-radius: 4px;
+ padding: 7px;
+ padding-left: 10px;
+ font-family: verdana;
+ font-size: 14px;
+ font-weight: lighter;
+ color: #4E4E4E;
+ text-shadow: -1px -2px #FFF, 1px 2px #FFF;
+ background-color: #E0FFFF;
+ cursor: pointer;
+ background: linear-gradient(to top, #E0E3EC, #E0FFFF);
+}
+
+.accordion_btn:hover
+{
+    background-color: #FFFFFF;
+    background: linear-gradient(to top, #FFF, #E0FFFF);
+}
+
+.accordion_content
+{
+ width: 637px;
+ border: 1px solid #D6D6D6;
+ padding: 10px;
+ margin-left: 5px;
+}
+
+.accordion_img
+{
+ float: right;
+ border: 1px solid #D6D6D6;
+ border-radius: 4px;
+ width: 16px;
+ height: 16px;
+ background-image: url('blocks/accordion/expand.png');
+}
+/* Стили для моего аккордеона (конец блока)*/
+
+
+
+
+
+/* START Стили для моего контекстного меню */
+.context_menu_top
+{
+padding: 2px;
+border: 1px solid #979797;
+font-size: 12px;
+font-family: Verdana, Geneva, sans-serif;
+width: auto;
+cursor: pointer;
+text-align: center;
+font-weight: bold;
+border-radius: 5px;
+background-color: #ECECEC;
+}
+
+.context_menu_top:hover
+{
+ border: 1px solid #979797;
+ background-color: #D0D0D0;
+ font-weight: bold;
+ color: #FFFFFF;
+}
+
+.context_menu_sub
+{
+ z-index: 10;
+ position: absolute;
+ background-color: #FFFFFF;
+ border: 2px solid #979797;
+}
+/* END Стили для моего контекстного меню */
+
+
+
+
+/* START кнопки в админке */
+.button
+{
+padding: 2px;
+border: 1px solid #979797;
+font-size: 12px;
+font-family: Verdana, Geneva, sans-serif;
+width: auto;
+cursor: pointer;
+text-align: center;
+font-weight: bold;
+color: #4E4E4E;
+background-color: #ECECEC;
+border-radius: 5px;
+}
+
+.button:hover
+{
+ border: 1px solid #979797;
+ font-weight: bold;
+ color: #FFFFFF;
+ background-color: #D0D0D0;
+}
+
+.button a
+{
+font-size: 12px;
+font-family: Verdana, Geneva, sans-serif;
+cursor: pointer;
+font-weight: bold;
+text-decoration: none;
+color: #4E4E4E;
+background-color: transparent;
+}
+
+.button a:hover
+{
+ font-weight: bold;
+ color: #FFFFFF;
+background-color: transparent;
+}
+/* END кнопки в админке */
+
+
+
+
+
+/* START Лента*/
+#lenta
+{
+  font-family: Verdana;
+  font-size: 18px;
+  text-decoration:none;
+  color:#009900;
+}
+/* END Лента*/
+
+
+
+
+
+/* Блок для новости*/
+#newsblock
+{
+  background: #F5F5F5;
+  border:  solid 1px #DFDFDF;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 10px;
+}
+/* Блок для новости*/
+
+
+
+
+
+/* START Кнопка-ссылка*/
+.divbtn
+{
+display:inline-block;
+/*padding: 4px;*/
+padding: 0px;
+margin: 0px;
+border: 1px solid #BFBFBF;
+border-radius: 5px;
+background-color: #F5F5F5;     /* #ECECEC*/
+background: linear-gradient(to top, #F5F5F5, #FFFFFF);
+width: auto;
+cursor: pointer;
+}
+
+.divbtn:hover
+{
+ background-color: #3399FF;
+ background: linear-gradient(to top, #3399FF, #33CCFF);
+ color: #FFFFFF;
+
+}
+
+.divbtn:hover a
+{
+ color: #FFFFFF;
+ text-decoration: none;
+}
+
+.divbtn a
+{
+padding: 4px;
+display: block;
+color: #606060;  /*#707070*/
+cursor: pointer;
+text-decoration: none;
+}
+
+.divbtn a:hover
+{
+ color: #FFFFFF;
+ text-decoration: none;
+}
+
+/* END конец Кнопка-ссылка*/
+
+
+
+
+
+/* START Гостева книга*/
+.gb_comment
+{
+  /*color: #A0A0A0;*/
+  color: #909090;
+  font-style: italic;
+}
+/* END Гостевая книга*/
+
+
+
+
+
+
+
+/* START Всплывающие подсказки*/
+.tooltip{
+
+        display: inline;
+	position: relative;
+        cursor: pointer;
+	}
+
+.tooltip:hover:after{
+	
+        
+        /*background: #333;*/
+        /*background: rgba(0,0,0,.8);*/
+        background: blue;
+        background: rgba(80, 114, 153,.9);
+	    border-radius: 5px;
+	    bottom: 28px;
+	    color: #fff;
+	    content: attr(tiptext);
+	    left: -50%;
+        padding: 5px 5px;
+	    position: absolute;
+	    z-index: 98;
+	    width: auto;
+        font-size: 12px;
+	}
+ /* END Всплывающие подсказки*/

@@ -1,0 +1,380 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from sgpk.rkomi.ru/100/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jul 2024 05:22:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta name="keywords" content="100 Лет СГПК Юбилей">
+<meta name="description" content="100 лет СГПК">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>100 лет СГПК</title>
+
+<style type="text/css">
+<!--
+body
+{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 13px;
+  background-color: #303030;
+  background: url("bg3.jpg") repeat-x;
+}
+
+h1
+{
+color: #006633;
+}
+
+
+
+
+/*Слайдер фона*/
+
+.zornet_ru_dsam {
+  overflow: hidden;
+  z-index: -1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.krugosvetka-background {
+  background: url("bg3.jpg") repeat-x;
+  height: 2048px;
+  width: 10000px;
+
+  animation: slide 360s linear infinite;
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-3000px, 0, 0);
+  }
+}
+/*Слайдер фона*/
+
+
+
+
+
+#title
+{
+color: #FFFFFF;
+font-family: Helvetica;
+font-size: 42px;
+z-index: 1;
+text-shadow: 3px 3px 15px #888888;
+position: fixed;
+left: 30vw;
+top: 1vh;
+
+}
+
+#timer_days
+{
+color: #FFFFFF;
+font-family: Helvetica;
+font-size: 160px;
+z-index: 2;
+text-shadow: 3px 3px 15px #707070;
+position: fixed;
+left: 37vw;
+top: 10vh;
+}
+
+#timer
+{
+color: #FFFFFF;
+font-family: Helvetica;
+font-size: 64px;
+z-index: 3;
+text-shadow: 3px 3px 7px #888888;
+position: fixed;
+left: 39vw;
+top: 32vh;
+}
+
+
+#timertext
+{
+color: #FFFFFF;
+font-family: Helvetica;
+font-size: 32px;
+z-index: 1;
+text-shadow: 3px 3px 7px #888888;
+position: fixed;
+left: 30vw;
+top: 45vh;
+width: 500px;
+}
+
+
+
+#timermessage
+{
+color: #FFFFFF;
+font-family: Helvetica;
+font-size: 64px;
+z-index: 3;
+text-shadow: 3px 3px 7px #888888;
+position: fixed;
+left: 28vw;
+top: 2vh;
+}
+
+
+
+.block
+{
+  display: inline-table;
+  vertical-align: middle; 
+  /*background-color: #FFFFFF;*/
+  opacity: 0.8;
+  border-radius: 7px;
+  padding: 0px;
+  margin: 0px;
+  min-height: 50px;
+  border-spacing: 1px;
+  
+}
+
+.block_left
+{
+margin: 0px;
+padding: 4px;
+display: table-cell; 
+text-align: center; 
+vertical-align: middle; 
+height: 50px;
+border: 1px #0066ff solid;
+min-height: 50px;
+border-top-left-radius: 7px;
+border-bottom-left-radius: 7px;
+background-color: #0066ff;
+color: #FFFFFF;
+width: 80px;
+
+font-weight: bold;
+}
+
+.block_right
+{
+margin: 0px;
+padding: 4px;
+display: table-cell; 
+text-align: center; 
+vertical-align: middle; 
+height: 50px;
+border: 1px #0066ff solid;
+min-height: 50px;
+border-top-right-radius: 7px;
+border-bottom-right-radius: 7px;
+background-color: #FFFFFF;
+width: 300px;
+
+}
+
+
+#link
+{
+    background-color: #FFFFFF;
+}
+
+#link:hover
+{
+    background-color: #0066ff;
+    color: #FFFFFF;
+}
+
+-->
+</style>
+
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="zornet_ru_dsam">
+  <div class="krugosvetka-background"></div>
+</div>
+
+
+<!--
+<p><b><a href='https://sgpk.rkomi.ru/100/excursion/otdelenie1.sozi.html' target="_blank">Экскурсия Социальная работа</a></b></p>
+-->
+
+<img src="logo100_2.png" width="350">
+
+<!--<div id="title">До юбилея осталось <br> дней:</div>-->
+<div id="timer_days"></div>
+<div id="timer"></div>
+<div id="timermessage"></div>
+<div id="timertext"><center>14 ноября 2021 года <br> 100 лет со дня основания</center></div>
+
+
+
+<script>
+
+// Берём элементы для вывода таймера
+let timer_show = document.getElementById("timer");
+let timer_days = document.getElementById("timer_days");
+let timer_mess = document.getElementById("timermessage");
+
+// Функция для вычисления разности времени
+function diffSubtract(date1, date2) {
+    return date2 - date1;
+}
+
+// Массив данных о времени
+let end_date = {
+    "full_year": "2021", // Год
+    "month": "11", // Номер месяца
+    "day": "14", // День
+    "hours": "00", // Час
+    "minutes": "00", // Минуты
+    "seconds": "00" // Секунды
+}
+
+// Строка для вывода времени
+let end_date_str = `${end_date.full_year}-${end_date.month}-${end_date.day}T${end_date.hours}:${end_date.minutes}:${end_date.seconds}`;
+
+// Запуск интервала таймера
+timer = setInterval(function () {
+    // Получение времени сейчас
+    let now = new Date();
+    // Получение заданного времени
+    let date = new Date(end_date_str);
+    // Вычисление разницы времени
+    let ms_left = diffSubtract(now, date);
+
+    //  Вычисляем кол-во дней между датами
+    var diff =  Math.floor(( Date.parse(end_date_str) - Date.parse(now) ) / 86400000);
+
+    // Если разница времени меньше или равна нулю
+    if (ms_left <= 0) { // То
+        // Выключаем интервал
+        clearInterval(timer);
+        // Выводим сообщение об окончание
+        //alert("Время закончилось");
+        timer_mess.innerHTML = "ГПОУ «СГПК»<br> исполнилось 100 лет!<br> Поздравляем!";
+    } else { // Иначе
+        // Получаем время зависимую от разницы
+        let res = new Date(ms_left);
+        // Делаем строку для вывода
+        //let str_timer = `${res.getUTCFullYear() - 1970} лет ${res.getUTCMonth()} месяцев ${res.getUTCDate() - 1} дней ${res.getUTCHours()} часов ${res.getUTCMinutes()} минут ${res.getUTCSeconds()} секунд.`;
+          let str_timer = `${res.getUTCHours()}:${res.getUTCMinutes()}:${res.getUTCSeconds()}`;
+        // Выводим время
+
+        timer_days.innerHTML =  diff;
+        timer_show.innerHTML =  str_timer;
+
+    }
+}, 1000)
+
+</script>
+
+<table width="100%" border=0>
+<tr>
+    <td width="400" style="vertical-align: top;">
+        <center><h1>~Анонсы мероприятий~</h1></center>
+        <div class="block"><div class="block_left">Февраль–март 2021</div><div class="block_right">Организация и проведение серии встреч «Откровенный разговор с …»</div></div>
+        <div class="block"><div class="block_left">Февраль-апрель 2021</div><div class="block_right">Спартакиада колледжа, посвященная 100-летию колледжа «Век здоровья»</div></div>
+        <div class="block"><div class="block_left">Февраль-ноябрь 2021</div><div class="block_right">Фестиваль «100 Добрых дел»</div></div>
+        <div class="block"><div class="block_left">Март 2021</div><div class="block_right">Акция «Письмо потомкам»</div></div>
+        <div class="block"><div class="block_left">Март 2021</div><div class="block_right">Конкурс профессионального мастерства «Удальцы-молодцы»</div></div>
+        <div class="block"><div class="block_left">22.03 - 03.04.2021</div><div class="block_right">Квест по истории колледжа</div></div>
+        <div class="block"><div class="block_left">23.04.2021</div><div class="block_right">II Учебно-исследовательская конференция «Студент и наука 2021», посвященная  на 100-летию ГПОУ «СГПК»</div></div>
+        <div class="block"><div class="block_left">28.04.2021</div><div class="block_right">Студенческая конференция "Век образования в колледже"</div></div>
+        <div class="block"><div class="block_left">Апрель 2021</div><div class="block_right">Научно-практическая студенческая конференция «Туризм: традиции и инновации</div></div>
+        <div class="block"><div class="block_left">21.05.2021</div><div class="block_right">Участие студентов профессии «Графический дизайнер» в республиканском конкурсе  граффити «ЭКСПРОМТ»</div></div>
+        <div class="block"><div class="block_left">Май 2021</div><div class="block_right">Конкурс виртуальных экскурсий "Дошкольникам о Республике Коми"</div></div>
+        <div class="block"><div class="block_left">Май 2021</div><div class="block_right">Конкурс экскурсионных проектов «Республике  100 лет» </div></div>
+        <div class="block"><div class="block_left">Май 2021</div><div class="block_right">Республиканская студенческая научно-практическая конференция «Проблемы образования и воспитания XXI века глазами молодых»</div></div>
+        <div class="block"><div class="block_left">Июнь 2021</div><div class="block_right">Выставка дизайн-проектов студентов, посвященная 100-летию ГПОУ «СГПК» в ЦКИ «Югор»</div></div>
+        <div class="block"><div class="block_left">Октябрь 2021</div><div class="block_right">Фестиваль открытых занятий «100 лет Республике Коми»</div></div>
+        <div class="block"><div class="block_left">Октябрь 2021</div><div class="block_right">Выставка поздравительных стенгазет «Виват, наш колледж!» досуговых объединений колледжа</div></div>
+        <div class="block"><div class="block_left">27.10.2021</div><div class="block_right">Экскурсия на ГУ «Республиканский стадион» с участием директора ГБУ «Спортивная школа №1», выпускника отделения физической культуры 2001 г.  А.Ю.Шабанова</div></div>
+        <div class="block"><div class="block_left">Октябрь-Ноябрь</div><div class="block_right">Конкурс творческих работ детей дошкольного возраста «Мой любимый воспитатель»</div></div>
+        <div class="block"><div class="block_left">Ноябрь 2021</div><div class="block_right">Республиканский фестиваль национальных культур «Республика Коми – наш общий дом»</div></div>
+        <div class="block"><div class="block_left">Ноябрь 2021</div><div class="block_right">Выставка стенгазет «Спорт – норма жизни»</div></div>
+        <div class="block"><div class="block_left">01.11.2021</div><div class="block_right">Мастер-класс по легкой атлетике от выпускника отделения физической культуры 2014 г., тренера ГБУ «Спортивная школа №1», президента Федерации по легкой атлетике М.И. Филиппова</div></div>
+        <div class="block"><div class="block_left">02.11.2021</div><div class="block_right">«Разговор по душам»: встреча с выпускницей Школьного отделения, учителем начальных классов ГПОУ «Гимназия искусств при Главе Республики Коми имени Ю. А. Спиридонова» Э.В. Васильевой</div></div>
+        <div class="block"><div class="block_left">02.11.2021</div><div class="block_right">Квест «Хранители вековой истории колледжа»</div></div>
+        <div class="block"><div class="block_left">03.11.2021</div><div class="block_right">Экскурсия в Сыктывкарский плавательный бассейн с участием директора МАУ «Спортивная школа олимпийского резерва «Аквалидер»», выпускника отделения физической культуры 2004 г. С.В. Шадрина</div></div>
+        <div class="block"><div class="block_left">04.11.2021</div><div class="block_right">«Классная встреча» с ветераном педагогического труда В.А. Турьевой</div></div>
+        <div class="block"><div class="block_left">05.11.2021</div><div class="block_right">«Разговор по душам» - встреча с выпускницей Школьного отделения, педагогом дополнительного образования высшей категории МУДО «Центр дополнительного образования детей «Успех»» И.Ю.Чуркиной</div></div>
+        <div class="block"><div class="block_left">09.11.2021</div><div class="block_right">Тематическое мероприятие "Колледж в моем сердце"</div></div>
+        <div class="block"><div class="block_left">09.11.2021</div><div class="block_right">Встреча с выпускницей колледжа специальности «Изобразительное искусство и черчение», членом Союза мастеров РК С.Агеевой</div></div>
+        <div class="block"><div class="block_left">10.11.2021</div><div class="block_right">Встреча с выпускником колледжа специальности «Изобразительное искусство и черчение», заслуженным работником РК Г. Шарипковым</div></div>
+        <div class="block"><div class="block_left">11.11.2021</div><div class="block_right">Встреча с выпускниками колледжа специальности «Гостиничное дело» А. Черняковой, А.Калиной</div></div>
+        <div class="block"><div class="block_left">11.11.2021</div><div class="block_right">Митап по обмену опытом между мастерскими по компетенции «Физическая культура, спорт и фитнес» ГПОУ «Сыктывкарским гуманитарно-педагогическим колледжем имени И.А. Куратова» и ГАПОУ СО «Свердловским областным педагогическим колледжем»  с участием преподавателя, заведующего  мастерской по компетенции «Физическая культура, спорт и фитнес», выпускницей отделения физической культуры 1996 г. С.А. Сибагатулиной</div></div>
+        <div class="block"><div class="block_left">12.11.2021</div><div class="block_right">Ретро видео салон «Киноархив колледжа»</div></div>
+        <div class="block"><div class="block_left">12.11.2021</div><div class="block_right">Встреча с выпускницей колледжа специальности «Музыкальное образование» Л.А. Мозымовой</div></div>
+        <div class="block"><div class="block_left">14.11.2021</div><div class="block_right">Торжественная концертная программа, посвященная празднованию 100-летия ГПОУ «СГПК», на базе концертного зала «Сыктывкар»</div></div>
+        <div class="block"><div class="block_left">17.11.2021</div><div class="block_right">Профориентационное мероприятие «СГПК 100 лет!» в МОУ «СОШ № 18»</div></div>
+        <div class="block"><div class="block_left">17.11.2021</div><div class="block_right">Встреча с выпускником колледжа специальности «Изобразительное искусство и черчение», руководителем студии «АРТ-вечёрка» Ю. Сиковой</div></div>
+        <div class="block"><div class="block_left">17.11.2021</div><div class="block_right">Встреча с выпускницей колледжа специальности «Гостиничное дело» Т.Калошиной, А.Вздыханько, И.Терентьевой</div></div>
+        <div class="block"><div class="block_left">Ноябрь 2021</div><div class="block_right">Видеоконференция на тему «Специалист по адаптивной физической культуре – это учитель физической культуры для людей с дефектами здоровья» с участием   специалистов Национального государственного Университета физической культуры, спорта и здоровья имени П.Ф. Лесгафта: директором института адаптивной физической культуры О.Э. Евсеевой и старшим преподавателем кафедры теории и методики адаптивной физической культуры, выпускницей отделения физической культуры 2012 г. С.С. Матвеевой</div></div>
+        <div class="block"><div class="block_left">Ноябрь 2021</div><div class="block_right">Студенческий флэшмоб  «Движение – жизнь!»</div></div>
+        <div class="block"><div class="block_left">Ноябрь 2021</div><div class="block_right">Педагогическая олимпиада для воспитателей ДОО, посвященная 100-летию Республики Коми</div></div>
+        <div class="block"><div class="block_left">Декабрь 2021</div><div class="block_right">Научно-практическая конференция «Актуальные вопросы дошкольного и специального дошкольного образования» приобщенного 100-летию колледжа и 90-летию дошкольного отделения</div></div>
+        <div class="block"><div class="block_left">Декабрь 2021</div><div class="block_right">Круглый стол с работодателями «Социальное партнерство и его роль в подготовке современного компетентного специалиста»</div></div>
+        <div class="block"><div class="block_left">17.12.2021</div><div class="block_right">Праздничный концерт, посвященный 90-летию Дошкольного отделения с приглашением выпускников и ветеранов</div></div>
+
+    </td>
+
+    <td width="*"  style="vertical-align: top;"></td>
+
+
+    <td width="400" style="vertical-align: top;">
+        <center><h1>~Пострелизы мероприятий~</h1> </center>
+        <div class="block"><div class="block_left">22.01.2021</div><a href="../news/article9c0a.html?newsid=4208"><div id="link" class="block_right">О 100-летии СГПК</div></a></div>
+        <div class="block"><div class="block_left">05.03.2021</div><a href="../news/articlee13a.html?newsid=4327"><div id="link" class="block_right">«Мне колледж дал путёвку в жизнь…»: встреча с Е.Лодыгиной</div></a></div>
+        <div class="block"><div class="block_left">15.03.2021</div><a href="../news/article760e.html?newsid=4345"><div id="link" class="block_right">Мастер-класс преподавателя Киселевой Л.Ф.</div></a></div>
+        <div class="block"><div class="block_left">16.03.2021</div><a href="../news/articled043.html?newsid=4351"><div id="link" class="block_right">Дмитрий Шатохин побывал в гостях у ГПОУ «СГПК»</div></a></div>
+        <div class="block"><div class="block_left">23.03.2021</div><a href="https://vk.com/pedcollkuratov?w=wall-50066881_5854"><div id="link" class="block_right">Флеш-моб "Тебе, мой колледж, добрыйе слова!"</div></a></div>
+        <div class="block"><div class="block_left">27.03.2021</div><a href="../news/article6edf.html?newsid=4396"><div id="link" class="block_right">Если бы не музыка – то моя жизнь не была бы полной (творческая встреча с выпускником колледжа К.А. Слобожаниновым)</div></a></div>
+        <div class="block"><div class="block_left">10.04.2021</div><a href="../news/article0ea2.html?newsid=4438"><div id="link" class="block_right">Встреча с выпускницей художественно-графического отделения Юлией Сивковой</div></a></div>
+        <div class="block"><div class="block_left">18.04.2021</div><a href="../news/articleaaad.html?newsid=4461"><div id="link" class="block_right">Квест-экскурсия «По страницам истории колледжа»</div></a></div>
+        <div class="block"><div class="block_left">22.04.2021</div><a href="../news/articleb615.html?newsid=4475"><div id="link" class="block_right">Встреча с выпускницей колледжа Натальей Бережной</div></a></div>
+        <div class="block"><div class="block_left">27.04.2021</div><a href="../news/article2b07.html?newsid=4490"><div id="link" class="block_right">Итоги II учебно-исследовательской конференции «Студент и наука 2021»</div></a></div>
+        <div class="block"><div class="block_left">27.04.2021</div><a href="../news/article4495.html?newsid=4489"><div id="link" class="block_right">Итоги республиканского конкурса юношей «Пера-богатырь-2021»</div></a></div>
+        <div class="block"><div class="block_left">11.06.2021</div><a href="../news/articlee7fd.html?newsid=4604"><div id="link" class="block_right">«БУКВАльный дизайн» Выставка дизайн-проектов студентов, посвященная 100-летию СГПК имени И.А. Куратова в ЦКИ «Югор»</div></a></div>
+        <div class="block"><div class="block_left">24.06.2021</div><a href="../news/article81e4.html?newsid=4627"><div id="link" class="block_right">Подарок к 100-летию колледжа от студентов профессии Графический дизайнер</div></a></div>
+        <div class="block"><div class="block_left">30.06.2021</div><a href="../news/article02bb.html?newsid=4809"><div id="link" class="block_right">Студенческий конкурс виртуальных экскурсий «Дошкольникам о Республике Коми»</div></a></div>
+        <div class="block"><div class="block_left">23.09.2021</div><a href="../news/articlec3f9.html?newsid=4696"><div id="link" class="block_right">Мастер-класс в творческой мастерской «Арт-вечёрка»</div></a></div>
+        <div class="block"><div class="block_left">09.11.2021</div><a href="../news/articlecb9a.html?newsid=4794"><div id="link" class="block_right">С Юбилеем любимый колледж поздравляет Осадчку Людмила Михайловна - участник проекта «ГОЛОС 60+»</div></a></div>
+        <div class="block"><div class="block_left">10.11.2021</div><a href="../news/article51fa.html?newsid=4798"><div id="link" class="block_right">Творческому объединению современного танца «Дансфор» исполнилось 20 лет</div></a></div>
+        <div class="block"><div class="block_left">14.11.2021</div><a href="https://minobr.rkomi.ru/content/1906"><div id="link" class="block_right">Одна из старейших организаций профессионального образования Республики Коми отмечает вековой юбилей. Речь о Сыктывкарском гуманитарно-педагогическом колледже имени И.А. Куратова.</div></a></div>
+        <div class="block"><div class="block_left">14.11.2021</div><a href="https://youtu.be/R9Pc6_HCICk"><div id="link" class="block_right">Торжественная концертная программа, посвященная празднованию 100-летия ГПОУ «СГПК»</div></a></div>
+        <div class="block"><div class="block_left">14.11.2021</div><a href="../news/article2359.html?newsid=4801"><div id="link" class="block_right">Поздравления от коллег к 100-летию ГПОУ СГПК</div></a></div>
+        <div class="block"><div class="block_left">15.11.2021</div><a href="https://komiinform.ru/news/224878/"><div id="link" class="block_right">Сыктывкарский гуманитарно-педагогический колледж отметил свое 100-летие</div></a></div>
+        <div class="block"><div class="block_left">21.11.2021</div><a href="../news/article3fbb.html?newsid=4828"><div id="link" class="block_right">25 лет в педколледже пестуют начинающих поэтов!</div></a></div>
+
+
+
+
+
+    </td>
+
+
+
+</tr>
+</table>
+
+
+
+
+
+</body>
+
+<!-- Mirrored from sgpk.rkomi.ru/100/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jul 2024 05:22:20 GMT -->
+</html>
+
